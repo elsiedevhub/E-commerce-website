@@ -74,7 +74,7 @@ const [showAddModal, setShowAddModal] = useState(false);
 
         {/* Product Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {visibleProducts.map((product, index) => (
+          {visibleProducts.map((product) => (
            <ProductCard
             key={product.id}
             id={product.id}
