@@ -29,10 +29,14 @@ const handleAddProduct = (data: any) => {
           <Link to="/">
             <h1 className="font-bold text-2xl w-[150px] h-20 flex items-center">MY STORE</h1>
           </Link>
+
           <ul className="hidden md:flex text-lg font-medium">
-            <li className="cursor-pointer hover:text-gray-400 w-[150px] h-20 flex items-center justify-center border-l border-r border-gray-600">
-              WOMEN
+            <li>
+              <Link to="/products" className="cursor-pointer hover:text-gray-400 w-[150px] h-20 flex items-center justify-center border-r border-gray-600">
+                WOMEN
+              </Link>
             </li>
+
             <li>
               <Link to="/products" className="cursor-pointer hover:text-gray-400 w-[150px] h-20 flex items-center justify-center border-r border-gray-600">
                 MEN
