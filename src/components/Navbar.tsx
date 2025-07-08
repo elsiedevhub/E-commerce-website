@@ -32,7 +32,7 @@ const handleAddProduct = (data: any) => {
 
           <ul className="hidden md:flex text-lg font-medium">
             <li>
-              <Link to="/products" className="cursor-pointer hover:text-gray-400 w-[150px] h-20 flex items-center justify-center border-r border-gray-600">
+              <Link to="/products" className="cursor-pointer hover:text-gray-400 w-[150px] h-20 flex items-center justify-center border-r border-l border-gray-600">
                 WOMEN
               </Link>
             </li>
