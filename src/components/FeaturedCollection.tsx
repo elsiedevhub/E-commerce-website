@@ -3,12 +3,13 @@ import ProductCard from "./ProductCard";
 import ShoeImage from "../assets/shoe.png"; // Replace with your actual path
 
 const FeaturedCollection: React.FC = () => {
-  const products = Array(4).fill({
+    const products = Array(4).fill(null).map((_, index) => ({
+    id: index + 100, // use unique ids
     image: ShoeImage,
     title: "Adidas originals ballet v-neck sweat in balck",
     price: "NGN 37,500",
     discount: "-60%",
-  });
+}));
 
   return (
     <section className="px-6 md:px-12 py-16 bg-white mt-10">
@@ -24,6 +25,7 @@ const FeaturedCollection: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product, index) => (
           <ProductCard
+            id={product.id}
             key={index}
             image={product.image}
             title={product.title}

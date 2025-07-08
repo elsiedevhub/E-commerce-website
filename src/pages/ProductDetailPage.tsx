@@ -25,8 +25,8 @@ const ProductDetailPage: React.FC = () => {
 
 const [selectedImage, setSelectedImage] = useState(images[0]);
     const recommendedProducts = Array(4).fill(null).map((_, index) => ({
-  id: index + 100, // use unique ids
-   image: ShoeImage,
+    id: index + 100, // use unique ids
+    image: ShoeImage,
     title: "Adidas originals ballet v-neck sweat in balck",
     price: "NGN 37,500",
     discount: "-60%",
